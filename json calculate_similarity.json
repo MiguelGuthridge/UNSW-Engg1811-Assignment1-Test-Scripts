@@ -1,0 +1,15 @@
+[ 
+    {
+        "test_type": "Provided 1",
+        "data_segment": [-1, 2, -2, 3],
+        "pattern": [40, 30, 20, 10],
+        "expected_output": 10
+    },
+
+    {
+        "test_type": "Provided 2",
+        "data_segment": [-1, 2, -2, 3],
+        "pattern": [40, 30, 20],
+        "expected_output": "Error"
+    }
+]
