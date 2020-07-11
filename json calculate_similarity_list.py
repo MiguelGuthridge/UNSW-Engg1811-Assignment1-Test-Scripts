@@ -40,11 +40,20 @@ class test_case:
         
         TOL = 0.00001
         is_correct = True
-        for i in range(0, len(self.expected_output)):
-            if isinstance(result[i], str) :
-                    is_correct = False        
-            elif  abs(result[i] - self.expected_output[i]) > TOL:
+        if type(result) is type(self.expected_output):
+            if type(result) is str:
+                if not result == self.expected_output:
                     is_correct = False
+            elif type(result) is list:
+
+                for i in range(0, len(self.expected_output)):
+                    if isinstance(result[i], str):
+                            is_correct = False        
+                    elif  abs(result[i] - self.expected_output[i]) > TOL:
+                            is_correct = False
+            else:
+                is_correct = False
+        else: is_correct = False
 
         if is_correct:
             print("Test generated correct results")
