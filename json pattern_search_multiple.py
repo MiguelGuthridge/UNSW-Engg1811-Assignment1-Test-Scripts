@@ -33,7 +33,7 @@ class test_case:
 
         # Run the function
         try:
-            result = psm.pattern_search_multiple(self.data_series, self.pattern_width, self.threshold)
+            result = psm.pattern_search_multiple(self.data_series.copy(), self.pattern_width, self.threshold)
         except Exception as error:
             print("Test failed to complete due to exception:")
             print(error)
