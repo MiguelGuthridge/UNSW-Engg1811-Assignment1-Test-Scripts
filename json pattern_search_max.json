@@ -13,5 +13,13 @@
         "pattern": [40, 30, 20],
         "threshold": 15,
         "expected_output":  "Insufficient data"
+    },
+
+    {
+        "test_type": "Provided 3",
+        "data_series": [-1, 2, -2, 3, 41, 38, 22, 10, -1, 3],
+        "pattern": [40, 30, 20, 10],
+        "threshold": 3321,
+        "expected_output":  "Not detected"
     }
 ]
