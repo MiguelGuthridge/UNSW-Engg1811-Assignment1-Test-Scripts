@@ -131,5 +131,14 @@
         "pattern_width": 2,
         "threshold": -10,
         "expected_output":  [2, 4, 6]
+    },
+
+    {
+        "test_type": "All above threshold (Shorter)",
+        "data_series": [-1, 5, 4, 8, 3, 21, 
+            18, 16, 3, 2, 3, 1, 4],
+        "pattern_width": 6,
+        "threshold": -1000,
+        "expected_output":  [6]
     }
 ]

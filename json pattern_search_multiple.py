@@ -7,7 +7,7 @@ Modify the JSON to add more test cases if you want. Enjoy!
 """
 
 # Tests to run. Either "ALL" for all tests, or a list of test numbers for only certain tests
-RUN = "ALL"
+RUN = [15]
 
 import pattern_search_multiple as psm
 import json
